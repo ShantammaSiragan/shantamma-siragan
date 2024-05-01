@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial- scale=1.0">
+<title>Jquery examples</title>
+<style>
+*{margin:0px;
+padding:0px;}
+.box{
+height:200px;
+width:200px;
+background-color:blue;
+border:solid 1px green;
+padding:5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(function(){
+$("#hide").click(function(){$("div").hide(3000)})
+$("#show").click(function(){$("div").show(3000)})
+$("#toggle").click(function(){$("div").toggle(3000)})
+$("#fadein").click(function(){$("div").fadeIn(3000)})
+$("#fadeout").click(function(){$("div").fadeOut(3000)})
+$("#fadetoggle").click(function(){$("div").fadeToggle(3000)})
+$("#fadeto").click(function(){$("div").fadeTo(3000,0.2)})
+$("#animate").click(function(){$("div").animate({width:"300",height:"300"},5000)})
+$("#height").click(function(){alert("Height:"+$("div").height())})//only height 
+$("#width").click(function(){alert("Width:"+$("div").width())})
+$("#iheight").click(function(){alert("innerHeight:"+$("div").innerheight())})//height+padding
+$("#iwidth").click(function(){alert("innerwidth:"+$("div").innerwidth())})
+$("#outterheight").click(function(){alert("outterHeight:"+$("div").outterheight())})//height+padding
+$("#outerwidth").click(function(){alert("outterwidth:"+$("div").outterwidth())})
+})
+</script>
+</head>
+<body>
+<div class="box"></div>
+<input type="button" value="hide" id="hide">
+<input type="button" value="show" id="show">
+<input type="button" value="toggle" id="toggle">
+<input type="button" value="fadein(Show)" id="fadein">
+<input type="button" value="fadeout(Hide)" id="fadeout">
+<input type="button" value="fadetoggle" id="fadetoggle">
+<input type="button" value="fadeto" id="fadeto">
+<input type="button" value="animate" id="animate">
+<input type="button" value="height" id="height">
+<input type="button" value="width" id="width">
+<input type="button" value="innerheight" id="iheight">
+<input type="button" value="innerwidth" id="iwidth">
+<input type="button" value="outterheight" id="oheight">
+<input type="button" value="outterwidth" id="owidth">
+</body>
+</html
